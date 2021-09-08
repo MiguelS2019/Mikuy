@@ -4,138 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href = "./styles.css" rel = "stylesheet" type="text/css">
-    <link rel = "icon" type = "image/png" href = "./img/favicon.ico">
     <title>Mikuytec</title>
+    <link rel = "stylesheet" href = "estilos.css">
 </head>
-<body style="background-color: #ffffff;">
+<body>
     <header>
-        <section id = "start">
-            <div class="px-4 py-5 my-5 text-center " style="background-color: #ffffff;">
-                <img class="d-block mx-auto mb-4" src="./img/logo-3.png" alt="" width="auto" height="300">
-                <h1 class="display-5 fw-bold" style = "font-family: 'Times New Roman'">MIKUYTEC</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4" style = "font-size: 20px; font-weight: 400;">Pensando en el futuro prolongando el hoy</p>
-                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href = "#about-us"><button type="button" class="btn btn-primary btn-lg px-4 gap-3" style = "background-color: #f1891e; border-color: #f1891e;">Continuar</button></a>
-                    <a href = "#contact-us"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Contacto</button></a>
-                  </div>
-                </div>
-              </div>
-        </section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#start">
-                <img src = "./img/logo-2.png" alt = "mikuy-logo-2" width = "auto" height = "30" class ="d-inline-block align-text-top"></img>Mikuytec
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#start">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#about-us">Sobre Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#help-us">Apóyanos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#contact-us">Contacto</a>
-                  </li>
-                  <!--
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                    -->
-                  <!--
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                    -->
-                </ul>
-                <!--
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                -->
-              </div>
-            </div>
-          </nav>
+        <a href = "#" class ="logo">Mikuytec<span>.</span></a>
+        <div class = "menuToggle" onclick= "toggleMenu();"></div>
+        <ul class = "navigation">
+            <li><a href = "#banner" onclick= "toggleMenu();">Inicio</a></li>
+            <li><a href = "#about" onclick= "toggleMenu();">Sobre Nosotros</a></li>
+            <li><a href = "#team" onclick= "toggleMenu();">Nuestro Equipo</a></li>
+            <li><a href = "#help" onclick= "toggleMenu();">Apóyanos</a></li>
+            <li><a href = "#contact" onclick= "toggleMenu();">Contacto</a></li>
+        </ul>
     </header>
-    <main>
-      <section id = "about-us" >
-        <div class="p-4 p-md-5 mb-4 "  style = "background-color: #ffde7d">
-          <div class="col-md-6 px-0">
-            <h1 class="display-4 fst-italic" style = "font-weight: 800">Sobre nosotros</h1>
-            <p class="lead my-3 " style = "font-size: 20px; font-weight: 400;">En Perú, 12.8 millones de toneladas de comida es desperdiciada cada año. Para resolver este problema hemos desarrillado un producto que extienda la vida útil de los alimentos sin necesidad de preservativos químicos usando biología sintética.</p>
-            <p class="lead mb-0"><a href="#" class=" fw-bold"><button type="button" class="btn btn-primary btn-lg px-4 gap-3" style = "background-color: #f1891e; border-color: #f1891e;">Deseo saber más...</button></a></p>
-          </div>
-        </div>
-      </section>
-      <div class = "espacio-entre-secciones"></div>
-      <section id = "help-us">
-        <div class="p-4 p-md-5 mb-4">
-          <div class="col-md-12 px-0">
-            <h1 class="display-4 fst-italic fw-bold">Apóyanos</h1>
-              <p class="lead my-3 " style = "font-size: 20px; font-weight: 400;">Ayúdanos a llegar a nuestra meta de $950 para iniciar el proyecto.</p>
-              <p class="lead mb-0"><a href="#" class=" fw-bold"><button type="button" class="btn btn-primary btn-lg px-4 gap-3" style = "background-color: #f1891e; border-color: #f1891e;">Deseo apoyar...</button></a></p>
-
-          </div>
-          <center>
-            <img src = "./img/budget.png">
-          </center>
+    <section class ="banner" id = "banner">
+        <div class = "content">
+            <h2>Mikuytec</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+            <a href ="#" class = "btn">Nuestro Menú</a>
 
         </div>
-      </section>
-      </section>
-      <div class = "espacio-entre-secciones"></div>
-      <section id = "contact-us" style = "background-color: #ffde7d">
-        <div class="p-4 p-md-5     ">
-          <div class="col-md-12 px-0 text-center">
-            <h1 class="display-4 fst-italic" style = "font-weight: 800">Contacto</h1>
-            <form>
-              <div class="mb-3">
-                <label for="Correo_casilla" class="form-label fw-bold">Correo</label>
-                <center>
-                  <div class = "col-md-6 align-items-center">
-                    <input type="email" class="form-control" id="Correo_casilla" aria-describedby="emailHelp">
-                  </div>
-                </center>
-                <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con otra persona.</div>
-              </div>
-              <div class="mb-3">
-                <label for="Comentario_casilla" class="form-label fw-bold">Comentario</label>
-                <center>
-                  <div class = "col-md-6 align-items-center">
-                    <input type="text" class="form-control" id="Comentario_casilla">
-                  </div>
-                </center>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-          </div>
-      </section>
-    </main>
-    <footer>
-      <section >
-        <div class="p-4 p-md-3  bg-dark  text-white text-center">
-            <p class="lead my-3 center">Mikuytec</p>
-            <p class="lead my-3 center" style = "font-size: 12px">&copy;Todos los derechos reservados - 2021</p>
-      </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </section>
+    <section class ="about" id = "about">
+        <div class ="row">
+            <div class = "col50">
+                <h2><span>S</span>obre Nosotros</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class = "col50">
+                <div class = "imgBx">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q_NVbj_-Xmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class ="team" id = "team">
+        <div class = "title">
+            <h2 class = "titleText">Nuestro <span>E</span>quipo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class ="content">
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/JeremyGuerrero.jpeg">
+                </div>
+                <div class ="text">
+                    <h3>Jeremy Guerrero</h3>
+                </div>
+            </div>
+        </div>
+        <div class ="title">
+            <a href = "#" class ="btn">Ver todos</a>
+        </div>
+    </section>
+    <section class ="expert" id = "expert">
+        <div class = "title">
+            <h2 class = "titleText">Nuestros <span>M</span>entores</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class ="content">
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/ErnestoCuadros.jpg">
+                </div>
+                <div class ="text">
+                    <h3>Ernesto Cuadros</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/ErnestoCuadros.jpg">
+                </div>
+                <div class ="text">
+                    <h3>Ernesto Cuadros</h3>
+                </div>
+            </div>
+            <div class ="box">
+                <div class ="imgBx">
+                    <img src= "img/ErnestoCuadros.jpg">
+                </div>
+                <div class ="text">
+                    <h3>Ernesto Cuadros</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class ="help" id = "help">
+        <div class ="row">
+            <div class = "col50">
+                <h2><span>A</span>póyanos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                    culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class = "col50">
+                <div class = "imgBx-2">
+                    <img src = "img/budget.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class ="contact" id = "contact">
+        <div class = "title">
+            <h2 class ="titleText"><span>C</span>ontacto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class ="contactForm">
+            <h3>Envia un mensaje</h3>
+            <div class ="inputBox">
+                <input type = "text" placeholder="Nombres y Apellidos">
+            </div>
+            <div class ="inputBox">
+                <input type = "text" placeholder="Correo Electrónico">
+            </div>
+            <div class ="inputBox">
+                <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div class = "inputBox">
+                <input type ="submit" value = "Enviar">
+            </div>
+        </div>
+    </section>
+    <div class = "copyrightText">
+        <p>Copyright 2020 Mikuytec. Todos los derechos reservados</p>
+    </div>
+    <script type="text/javascript" src="codigos.js"></script>
 </body>
 </html>
